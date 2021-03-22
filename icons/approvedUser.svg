@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.451" height="14.451" viewBox="0 0 14.451 14.451">
+  <g id="approvedUser" transform="translate(-542 -146)">
+    <g id="Audit" transform="translate(542 146)">
+      <g id="Approved">
+        <g id="user-check">
+          <path id="Path_1230" data-name="Path 1230" d="M22.322,19l-4.064,4.064L16.9,21.709l-.9.9,2.258,2.258L23.225,19.9Z" transform="translate(-8.775 -10.42)" fill="#87898c"/>
+          <path id="Path_1231" data-name="Path 1231" d="M6.322,10.838h4.516V9.213A8.672,8.672,0,0,0,7.225,8.165V7.42A4.034,4.034,0,0,0,9.032,4.064C9.032,1.819,9.032,0,6.322,0S3.613,1.819,3.613,4.064A4.033,4.033,0,0,0,5.419,7.42v.745C2.355,8.416,0,9.921,0,11.741H6.322v-.9Z" transform="translate(0 0)" fill="#87898c"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

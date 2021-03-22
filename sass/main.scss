@@ -1,0 +1,455 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Include custom variable default overrides here
+$body-bg: #FFFFFF;
+$color-approved-blue: #009BD6;
+$color-denied-red: #AA0A3C;
+$color-flagged-teal: #128E93;
+$color-alert-green: #6FBA38;
+$color-alert-peach: #E89961;
+$color-alert-red: #BF0000;
+$color-button-yellow: #F0BC0E;
+$color-grey: #87898C;
+$color-grey-dark: #6C6E71;
+$color-grey-light: #B4B7B9;
+$color-black: #363636;
+$color-shadow: rgba($color: #000000, $alpha: 0.20);
+
+#globalstyle {
+background-color: $body-bg;
+font-family: lato;
+}
+
+.pseudoNav {
+    background-color: $color-black;
+    width: 100%;
+    height: 120px;
+    opacity: .3;
+    bottom: 0;
+}
+
+.pseudoFooter {
+    background-color: $body-bg;
+    width: 100%;
+    height: 80px;
+}
+
+#Nav {
+margin-top: 8px;
+}
+
+#NavLink {
+
+    &__grey {
+        color: $color-grey;
+
+        &:hover {
+            color: $color-grey-dark;
+        }
+    }
+
+    &__active {
+        border-bottom: 4px solid $color-alert-peach;
+        
+    }
+}
+
+#button {
+    position: relative;
+
+    &__primary {
+    background-color: $body-bg;
+    border-radius: 50px;
+    padding: 4px 16px;
+    border: 1.5px solid $color-button-yellow;
+    color: $color-grey-dark;
+    font-weight: 700;
+
+    &--float {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background-color: $body-bg;
+        border-radius: 50px;
+        padding: 4px 16px;
+        border: 1.5px solid $color-button-yellow;
+        color: $color-grey-dark;
+        font-weight: 700;
+
+        &:hover {
+            background-color: $color-button-yellow;
+            color: $body-bg;
+        }
+        
+    }
+
+    &:hover {
+        background-color: $color-button-yellow;
+        color: $body-bg;
+    }
+    }
+}
+
+
+#notescontainer {
+    border: 1px solid $color-grey-light;
+    border-radius: 10px;
+    padding: 0;
+    margin-left: 12px;
+}
+
+#icons {
+
+    &__dropdown {
+       margin-right: 5px; 
+    }
+
+    &__search {
+        position: absolute;
+        left: 20px;
+        top: 16px;
+        
+    }
+}
+
+
+
+#globalfont {
+    font-family: lato;
+}
+
+
+.header1 {
+   color: $color-black;
+   font-size: 30px;
+   font-weight: 900;
+   margin-top: 40px;
+   margin-bottom: 18px;
+}
+
+.header2 {
+    color: $color-black;
+    font-size: 19px;
+    font-weight: 900;
+    margin-bottom: 12px;
+ }
+
+ #header4 {
+    color: $color-button-yellow;
+    font-size: 17px;
+    font-weight: 900;
+    margin-left: 12px;
+ }
+ 
+
+#card {
+    position: relative;
+
+    &__override {
+    border-radius: 10px;
+    box-shadow: 0px 6px 17px $color-shadow;
+    border: none;
+    margin-bottom: 12px;
+}
+
+    &__search{
+        border-radius: 25px;
+        box-shadow: 0px 6px 17px $color-shadow;
+        border: none;
+        margin-bottom: 12px;
+        padding: 11px 12px 6px 50px;
+        height: 50px;
+
+        &--input {
+            border: none;
+            outline: none;
+        }
+    }
+
+    &__image {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+}
+
+#table {
+
+    &__override {
+        margin: 12px;
+    }
+
+    &__item {
+        padding: 12px 0 12px 0;
+        font-size: 13px;
+
+        &--bold {
+            font-weight: 900;
+            font-size: 13px;
+        }
+        
+        &--title {
+            font-weight: 800;
+            font-size: 16px;
+        }
+    }
+
+    &__headoverride {
+        border-bottom: 1px solid $color-grey-light;
+    }  
+}
+
+.inputLabel {
+    color: $color-grey;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;  
+}
+
+.inputValue {
+    color: $color-black;
+    font-size: 16px;
+    font-weight: 400;
+    
+    &__Status {
+    color: $color-alert-peach;
+    font-size: 16px;
+    font-weight: 800;    
+    }
+}
+
+.Divider {
+    border: 1px solid $color-grey;
+    opacity: 1;
+    margin: 0;
+
+    &__orange {
+        border: 1px solid $color-alert-peach;
+        opacity: 1;
+        margin: 0;
+    }
+
+    &__thin {
+        border: 0.5px solid $color-grey-light;
+        opacity: .5;
+        margin: 0;
+    }
+}
+
+#carddeck-row {
+    margin-top: 12px;
+}
+
+#CustomerProvidedDocuments {
+margin-top: 60px;
+width: 250px;
+
+&__CET {
+    margin-top: 0px;
+    width: 250px;
+}
+
+}
+
+.filecomponent {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 16px;
+
+    &__image {
+        width: 18px;
+    }
+
+    &__text {
+        position: absolute;
+        top: 3px;
+        left: 50px;
+        color: $color-grey-dark;
+    }
+
+    &__text2 {
+        position: absolute;
+        top: 3px;
+        left: 75px;
+        color: $color-grey-dark;
+    }
+}
+
+.DL-viewer {
+width: 360px;
+   background-color: $color-grey-light;
+   border-radius: 6px;
+
+   margin-left: -60px;
+   
+   &--group {
+    margin-left: -60px;
+
+    &-icon {
+        width: 28px;
+        padding: 12px 4px;
+    }
+   }
+}
+
+.moderation-component {
+position: relative;
+display: flex;
+justify-content: space-between;
+padding: 8px 0 12px 0;
+
+&--top {
+flex-direction: row;
+display: flex;
+justify-content: space-between;
+}
+
+&--top2 {
+    flex-direction: row;
+    display: flex;
+}
+
+&--text {
+top: 2px;
+margin-bottom: 0px;
+font-size: 14px;
+}
+
+&--imagebox {
+    align-items: flex-end;
+}
+
+&--image {
+    padding-right: 3px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+}
+
+.identity {
+    margin-bottom: 32px;
+}
+
+#indentity-label{
+    font-size: 11px;
+    font-weight: 700;
+    color: $color-grey-dark;
+    margin: 10px 0 0 21px;
+    
+}
+
+.moderation-component-2 {
+    position: relative;
+    margin-bottom: 8px;
+    
+    &--text {
+    position: absolute;
+    top: 2px;
+    left: 28px;
+    }
+    
+    &--image {
+        padding-right: 3px;
+        cursor: pointer;
+    }
+    }
+    
+
+
+    #tableRow {
+        border: 1px solid $body-bg;
+    }
+
+    .Calender-Header {
+
+        &--month {
+            color: $color-black;
+            font-size: 19px;
+            font-weight: 800;
+            margin-bottom: 18px;
+            margin-left: 25px;
+        }
+
+        &--weekday {
+            color: $color-grey;
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 4px; 
+        }
+    }
+
+    #currentday {
+        height: 10px;
+        width: 10px;
+        background-color: $color-button-yellow;
+        border-radius: 50%;
+        color: $body-bg;
+        font-weight: 800;
+        margin: 4px;
+    }
+
+    #formcomponent {
+        margin-bottom: 8px;
+        border: 1px solid $color-grey;
+        border-radius: 4px;
+    }
+
+    .call-calender-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid black;
+        padding: 12px 0 12px 0;
+
+        &--objectred {
+            height: 12px;
+            width: 12px;
+            background-color: $color-alert-red;
+            border-radius: 50%;
+            margin: 6px 0 0 0;
+        }
+
+        &--objectorange {
+            height: 12px;
+            width: 12px;
+            background-color: $color-alert-peach;
+            border-radius: 50%;
+            margin: 6px 0 0 0;
+        }
+
+        &--objectgrey {
+            height: 12px;
+            width: 12px;
+            background-color: $color-grey-light;
+            border-radius: 50%;
+            margin: 6px 0 0 0;
+        }
+
+        &--object2 {
+            font-weight: 700;
+        }
+    }
+
+    #call-calender-item--text {
+        margin-bottom: 0px;
+    }
+
+    #tinytext {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+// Optional
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+

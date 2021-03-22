@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- Custom CSS Starts here-->
+  <link rel="stylesheet" href="css/style.css">
+  <title>ZVRS | Registration</title>
+</head>
+
+<body id="globalfont">
+
+  <div class="pseudoNav">
+    <!-- This div is where the Existing Nav would be -->
+  </div>
+
+  <!-- This is the global tab navigation -->
+
+  <ul class="nav justify-content-center" id="Nav">
+
+    <li class="nav-item" id="NavLink">
+      <a class="nav-link" href="index.html" id="NavLink__grey">
+        <img src="icons/search.svg" alt="">
+        Search Client</a>
+    </li>
+
+    <li class="nav-item" id="NavLink">
+      <a class="nav-link" href="Assignment-queue.html" id="NavLink__grey">
+        <img src="icons/line-graph.svg" alt="">
+        Assignment Queue</a>
+    </li>
+    <div id="NavLink__active">
+      <li class="nav-item" id="NavLink">
+        <a class="nav-link" href="Account-overview.html" id="NavLink__grey">
+          <img src="icons/profile3.svg" alt="">
+          Account Overview</a>
+      </li>
+    </div>
+    <li class="nav-item" id="NavLink">
+      <a class="nav-link" href="CET-audit.html" id="NavLink__grey">
+        <img src="icons/approvedUser.svg" alt="">
+        CET Audit</a>
+    </li>
+    <li class="nav-item" id="NavLink">
+      <a class="nav-link" href="LNP.html" id="NavLink__grey">
+        <img src="icons/phone.svg" alt="">
+        LNP</a>
+    </li>
+    <div id="notescontainer">
+      <li class="nav-item" id="NavLink">
+        <a class="nav-link" href="#" id="NavLink__grey">
+          <img src="icons/open-book.svg" alt="">
+          Notes</a>
+      </li>
+    </div>
+  </ul>
+
+  <div class="container-xl">
+    <div>
+      <h1 class="header1">Account Overview<span id="header4">Status Under Review</span></h1>
+    </div>
+    <div class="row">
+      <!-- Card Deck component  -------------------------------------------------------------------->
+      <div class="col-sm-3">
+        <div class="card" id="card__override">
+          <button type="button" class="btn btn-outline-primary" id="button__primary--float">EDIT</button>
+          <img src="images/DL-placeholder@2x.png" id="card__image" class="card-img-top"
+            alt="Driver's License placeholder">
+          <div class="card-body">
+            <h3 class="header2">First M. Last Name Sfx.</h3>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="inputLabel">Register Number</p>
+                <p class="inputValue">12345678</p>
+              </div>
+
+              <div class="col-sm-6">
+                <p class="inputLabel">Status</p>
+                <p class="inputValue__Status">Under Review</p>
+              </div>
+            </div>
+
+            <hr class="Divider__orange">
+
+            <div id="carddeck-row">
+              <p class="inputLabel">Address</p>
+              <p class="inputValue">1234 Any Street
+                <br>Any City, 123456 FL
+              </p>
+
+              <p class="inputLabel">Email address</p>
+              <p class="inputValue">John@mail.com</p>
+
+              <p class="inputLabel">Date of Birth</p>
+              <p class="inputValue">MM-DD-YYYY</p>
+
+              <p class="inputLabel">Phone Number</p>
+              <p class="inputValue">(000) 555-5555</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-3">
+        <div id="carddeck-row">
+          <h3 class="header2">E911</h3>
+          <p class="inputLabel">Address</p>
+          <p class="inputValue">1234 Any Street
+            <br>Any City, 123456 FL
+          </p>
+
+          <p class="inputLabel">Email address</p>
+          <p class="inputValue">John@mail.com</p>
+
+          <div id="CustomerProvidedDocuments">
+            <h3 class="header2">Customer Provided
+              Documents</h3>
+
+            <div class="filecomponent">
+              <img src="icons/file-pdf.svg" alt="" class="filecomponent__image">
+              <p class="filecomponent__text">Driver License Front</p>
+            </div>
+            <div class="filecomponent">
+              <img src="icons/file-pdf.svg" alt="" class="filecomponent__image">
+              <p class="filecomponent__text">Driver License Back</p>
+            </div>
+            <div class="filecomponent">
+              <img src="icons/file-pdf.svg" alt="" class="filecomponent__image">
+              <p class="filecomponent__text">Electric Bill</p>
+            </div>
+            <div class="filecomponent">
+              <img src="icons/file-pdf.svg" alt="" class="filecomponent__image">
+              <p class="filecomponent__text">Court Ordered <br> Name
+                Change Document</p>
+            </div>
+            <br>
+            <div class="filecomponent">
+              <img src="icons/file-pdf.svg" alt="" class="filecomponent__image">
+              <p class="filecomponent__text">Marriage License</p>
+            </div>
+            <br>
+            <button type="button" class="btn btn-outline-primary" id="button__primary">VIEW</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div id="carddeck-row">
+          <h3 class="header2">Port Information</h3>
+          <p class="inputLabel">Phone Number to Port</p>
+          <p class="inputValue">(000) 555-5555</p>
+
+          <p class="inputLabel">Name</p>
+          <p class="inputValue">First Name M<br>
+            Last Name Sfx</p>
+
+          <p class="inputLabel">Address</p>
+          <p class="inputValue">1234 Any Street<br>
+            Any City, 123456 FL</p>
+
+          <p class="inputLabel">Previous Provider</p>
+          <p class="inputValue">Provider Name</p>
+
+
+          <p class="inputLabel">LOA</p>
+          <p class="inputValue">LOA Information</p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div id="carddeck-row">
+          <h3 class="header2">Registration
+            Information</h3>
+
+          <p class="inputLabel">Name</p>
+          <p class="inputValue">First Name M<br>
+            Last Name Sfx</p>
+
+          <p class="inputLabel">Address</p>
+          <p class="inputValue">1234 Any Street<br>
+            Any City, 123456 FL</p>
+
+          <p class="inputLabel">Email address</p>
+          <p class="inputValue">John@mail.com</p>
+
+
+          <p class="inputLabel">E911 Address</p>
+          <p class="inputValue">1234 Any Street<br>
+            Any City, 123456 FL</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="pseudoFooter">
+    <!-- This div is where the Existing Footer would be -->
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
